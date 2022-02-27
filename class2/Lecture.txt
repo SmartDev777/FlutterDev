@@ -1,0 +1,27 @@
+Class 2 :
+
+dif between num and double decide on runtime 
+double could be int and decimal number 
+int only contain whole numbers 
+String is sequence of characters
+num can be store int or decimal value use to avoid exceptoin
+rules of variables 
+
+Arithmetic Operators 
+Equality 
+Logical
+
+~ 
+tilda used to convert the dcimal to int
+()-round bracket {}- curly brackets
+
+----Equality----- 
+6 total--->,<,==,!=,>=,<=
+
+if condition example 
+
+======Git =======
+
+Credntail manager -> remove the previous 
+git add -A  -->use to track files 
+present tense in commit 
