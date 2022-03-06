@@ -1,0 +1,14 @@
+
+Class # 3 Lecture 
+
+
+installation of flutter sdk 
+vscode
+always put the sdk in C drive 
+
+Logical operators 
+--- and or not 
+
+commman to run file in vscode :
+run below command in terminal 
+dart run main.dart
