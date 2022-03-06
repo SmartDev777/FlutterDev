@@ -12,3 +12,8 @@ Logical operators
 commman to run file in vscode :
 run below command in terminal 
 dart run main.dart
+
+// Take input from user 
+ var email = stdin.readLineSync();
+
+
