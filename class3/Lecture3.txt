@@ -13,6 +13,9 @@ commman to run file in vscode :
 run below command in terminal 
 dart run main.dart
 
+//use code . to open vscode direct from folder 
+//user ctrl . to import the library of dart
+
 // Take input from user 
  var email = stdin.readLineSync();
 

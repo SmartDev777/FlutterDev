@@ -9,9 +9,13 @@ void main() {
   var email = stdin.readLineSync();
   print("Enter password");
   var password = stdin.readLineSync();
-  if (email == correctEmail && password == correctPassword) {
-    print("Login success");
-  } else {
-    print("Incorrect username or password");
+  if (email != correctEmail) {
+    print("incorrect email");
+    return;
   }
+  if (password != correctPassword) {
+    print("incorrect password");
+    return;
+  }
+  print("Login Success");
 }
