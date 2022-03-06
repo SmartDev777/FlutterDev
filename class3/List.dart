@@ -12,6 +12,7 @@ void main() {
   print("Reversed => ${reversed}");
 
   //start range index ,end index , value
-  data.replaceRange(data.length - 2, data.length, [7, 8]);
+  //update the last value in array
+  data.replaceRange(data.length - 1, data.length, [7]);
   print("Replace range => ${data}");
 }
