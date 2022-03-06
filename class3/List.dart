@@ -11,6 +11,8 @@ void main() {
   var reversed = List.of(data.reversed);
   print("Reversed => ${reversed}");
 
+  print("Remove => ${data.remove(6)} ");
+
   //start range index ,end index , value
   //update the last value in array
   data.replaceRange(data.length - 1, data.length, [7]);
