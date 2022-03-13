@@ -17,4 +17,17 @@ print(data['lang'][0]);
 List arr=[1,2,4,data];
 print(arr[3]['lang'][1]);
 
+
+// Put the value into map if absent otherwise print previous
+//fav_os is key 
+data.putIfAbsent("fav_os", () => "Android");
+print(data);
+
+//remov the value from map 
+
+data.remove('occupation');
+print(data);
+
+//remove where
+data.removeWhere((key, value) =>  )
 }

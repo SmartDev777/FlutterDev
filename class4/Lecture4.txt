@@ -5,3 +5,15 @@ key , value
 key should be unique 
 key is identity 
 key and value data type is dynamic
+
+remove is skip from list and map 
+
+spread operator ... for map merging 
+
+Map.fromInternables used to make map from list of keys and values 
+
+map.containsKey(1)  used to check keys exist or not 
+
+post increment  i++ 
+
+pre increment ++i
