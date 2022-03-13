@@ -1,0 +1,7 @@
+Map in dart 
+{'name':"touseeq"}
+value get in the form of key 
+key , value
+key should be unique 
+key is identity 
+key and value data type is dynamic
