@@ -1,14 +1,12 @@
 void main(List<String> args) {
-  var data = 23;
-
-  List digits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-  List special = ['/', '(', ')'];
-
-  if (digits.contains(data)) {
+  var data = "23";
+  final alphanumeric = RegExp(r'^[a-zA-Z]+$');
+  final digits = RegExp(r'^[0-9]+$');
+  if (digits.hasMatch(data)) {
     print("Digit");
-  } else if (special.contains(data)) {
-    print('Special charater');
-  } else {
+  } else if (alphanumeric.hasMatch(data)) {
     print('Alphabet');
+  } else {
+    print('Special charater');
   }
 }

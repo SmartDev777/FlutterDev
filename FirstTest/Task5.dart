@@ -3,17 +3,24 @@
  */
 
 void main(List<String> args) {
-  List data = [7, 9, 5, 11, 7, 4, 12, 6, 2, 11];
+  List<int> data = [7, 9, 5, 11, 7, 4, 12, 6, 2, 11];
 
-  List distances = [];
-  data.sort();
-
-  print(data);
+  //map for keeping value and counts
+  Map minimumDistances = Map<String, num>();
 
   for (int i = 0; i < data.length; i++) {
     for (int j = i + 1; j < data.length; j++) {
-      distances.add(data[i] - data[j]);
+      minimumDistances.putIfAbsent(
+          "${data[i]}-${data[j]}", () => data[i] - data[j]);
     }
   }
-  print(distances);
+  num minumDistance;
+
+  List distances = [];
+  //Now finding the majority Minimum distance from map values
+  minimumDistances.forEach((key, value) {
+    distances.add(value);
+  });
+  distances.sort();
+  print(distances.first);
 }
