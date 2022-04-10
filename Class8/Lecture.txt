@@ -1,0 +1,14 @@
+=======
+
+Function 
+
+String abc()=> "Hello world"
+
+Strng hello()
+{
+return "Hello world" 
+}
+
+Class ==
+
+--always start with capital letter
