@@ -1,0 +1,30 @@
+Class contain two thing 
+Class ? 
+Clsas is the blue print it increase the usability of code 
+Property 
+behavior
+Class name startswith capital letter
+outside class need to make instance 
+within class need to access object use this keyword
+
+Optional in function :
+key value 
+{address,designation} --> no sequence
+[address,designatoin]---> sequence imp
+ 
+
+Constructor 
+Names Constructor
+
+{} it means we need to provide the key when assigning values 
+this is used for optional and order sequence is not imp in it 
+[] also used for optional 
+SmartPhone.Tablet()
+
+
+Inheritance
+Polymorphism  -> one object play multiple roles 
+Encapsulation -> data hiding 
+Abstraction --> 
+
+
