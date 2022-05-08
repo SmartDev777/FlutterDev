@@ -1,5 +1,6 @@
 flutter doctor
 flutter create firstapp
+flutter run
 structure of flutter
 Stateless vs stateful
 Everything is widget in flutter
@@ -15,3 +16,7 @@ Scaffold
 Material App used only once in app 
          home
 Scaffold ony used where need whole screen 
+Container -- single child
+Row ---children
+Column ----children
+
