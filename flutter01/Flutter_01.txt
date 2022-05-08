@@ -1,0 +1,17 @@
+flutter doctor
+flutter create firstapp
+structure of flutter
+Stateless vs stateful
+Everything is widget in flutter
+ctrl . for import 
+stl for stateless 
+stf for statefull
+material.dart for android
+runApp(MyApp()); ----- for run class 
+Scaffold 
+         Appbar 
+        body
+        drawer
+Material App used only once in app 
+         home
+Scaffold ony used where need whole screen 
