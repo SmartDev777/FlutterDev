@@ -4,3 +4,8 @@ Icon widget
 Single child scroll view can be horizontal and vertical 
 MainAxis Aligment 
 CrossAxis Aligment 
+mainAxisAlignment: MainAxisAlignment.end,
+          crossAxisAlignment: CrossAxisAlignment.end,
+Padding 
+
+Margin 
