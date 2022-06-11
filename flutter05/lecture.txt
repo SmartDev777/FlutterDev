@@ -1,0 +1,25 @@
+Image from assets and network 
+Image.assets
+Boxfit
+enable assets in pubspec 
+make directory for assets
+Svg use 
+height and width can be set
+const used for fixed value 
+# -> 0xff
+Elevated button empty function
+push navigator
+pop 
+pushreplacement only skip previous screen 
+pushreplacement untill for logout 
+
+
+1) Fonts
+2) Icons
+3) Stack Widget
+4) Gradient Colors
+5) Box Decoration 
+6) Tab bar
+7) Bottom Navigation bar
+
+

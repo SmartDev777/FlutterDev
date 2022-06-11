@@ -1,0 +1,11 @@
+
+Migration ndk:
+ https://developer.android.com/studio/projects/add-native-code.html?utm_campaign=android_discussion_cmake_110716&utm_source=anddev&utm_medium=blog#ndkCompile
+
+
+https://stackoverflow.com/questions/39589427/difference-between-cmake-and-ndk-build-in-android-studio-project
+
+Best Code lab
+https://developer.android.com/codelabs/android-studio-cmake#2
+
+https://github.com/android/ndk-samples/tree/main/prefab/curl-ssl/app/src/main/cpp

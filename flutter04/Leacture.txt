@@ -1,0 +1,21 @@
+Nested containers row and column
+
+
+Circle avatar
+--radius,background etc
+Icon
+Listtile 
+
+examples listview in flutter
+
+https://codesinsider.com/flutter-listview-example/
+
+-----------
+
+Listview simple container coulum and singlechild scroll view
+Listview.builder used to build all items 
+shrinkwrap true if listview inside column 
+physics Neverscrollphysinc if listview inside single child scrollview
+columns take whole space so we used expanded widget that takes whole space 
+
+first item fixed then scroll listview then used expanded 
