@@ -1,3 +1,4 @@
+import 'package:firebase_app/home_screen.dart';
 import 'package:firebase_app/sign_up.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -10,6 +11,9 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
+  TextEditingController emailControler = new TextEditingController();
+  TextEditingController pwdController = new TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,16 +22,29 @@ class _LoginScreenState extends State<LoginScreen> {
         children: [
           SizedBox(
               height: MediaQuery.of(context).size.height * 0.2,
-              child: TextField()),
+              child: TextField(
+                controller: emailControler,
+              )),
           SizedBox(
               height: MediaQuery.of(context).size.height * 0.2,
-              child: TextField()),
+              child: TextField(
+                controller: pwdController,
+              )),
+          ElevatedButton(
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => SignUpScreen()));
+              },
+              child: Text("Sign Up")),
           ElevatedButton(
               onPressed: () async {
                 try {
                   final credential = await FirebaseAuth.instance
                       .signInWithEmailAndPassword(
-                          email: "dev@gmail.com", password: "212332");
+                          email: emailControler.text,
+                          password: pwdController.text);
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => MyHomePage()));
                 } on FirebaseAuthException catch (e) {
                   if (e.code == 'user-not-found') {
                     print('No user found for that email.');
@@ -35,9 +52,6 @@ class _LoginScreenState extends State<LoginScreen> {
                     print('Wrong password provided for that user.');
                   }
                 }
-
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => SignUpScreen()));
               },
               child: Text("Login"))
         ],

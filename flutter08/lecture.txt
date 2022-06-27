@@ -1,3 +1,9 @@
+
+
+Flutter upgrade
+
+node update --- for update 
+
 Firebase project creation 
 firebase cli by flutter 
 1) install node

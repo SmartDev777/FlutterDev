@@ -47,29 +47,30 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyAXmEhP4BEa6BfLXRNIpmZH6IiyA-hB9Lc',
-    appId: '1:402516469184:web:820d3953b365030ffed425',
-    messagingSenderId: '402516469184',
-    projectId: 'test-09090',
-    authDomain: 'test-09090.firebaseapp.com',
-    storageBucket: 'test-09090.appspot.com',
+    apiKey: 'AIzaSyA6LMWRgw4pmpXOrQezQxUp8omrQImrODc',
+    appId: '1:1047486986075:web:6706a57e816a95b61fcc7e',
+    messagingSenderId: '1047486986075',
+    projectId: 'flutterapps-1b0d5',
+    authDomain: 'flutterapps-1b0d5.firebaseapp.com',
+    storageBucket: 'flutterapps-1b0d5.appspot.com',
+    measurementId: 'G-BXXC1WH8MY',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyCRcSTMBsOBO5EBuKvbyBzM4_-WhsIqzmI',
-    appId: '1:402516469184:android:890a5b8e3b273af4fed425',
-    messagingSenderId: '402516469184',
-    projectId: 'test-09090',
-    storageBucket: 'test-09090.appspot.com',
+    apiKey: 'AIzaSyAGxJ2Fr7Dbwh_irZzAeUaG_7ZpLdqdTBg',
+    appId: '1:1047486986075:android:47dbe285d838adab1fcc7e',
+    messagingSenderId: '1047486986075',
+    projectId: 'flutterapps-1b0d5',
+    storageBucket: 'flutterapps-1b0d5.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyA5G6cLoMzQQY4GV35jZiUHMhWBwiEhNhA',
-    appId: '1:402516469184:ios:e96d75500047f295fed425',
-    messagingSenderId: '402516469184',
-    projectId: 'test-09090',
-    storageBucket: 'test-09090.appspot.com',
-    iosClientId: '402516469184-rh446cu9p4fphdqv8p3h2o3h1ngep79p.apps.googleusercontent.com',
+    apiKey: 'AIzaSyCJwPjrTEG6-awc_eP34-WefqOuIpXtY10',
+    appId: '1:1047486986075:ios:9fbfea997419846d1fcc7e',
+    messagingSenderId: '1047486986075',
+    projectId: 'flutterapps-1b0d5',
+    storageBucket: 'flutterapps-1b0d5.appspot.com',
+    iosClientId: '1047486986075-bm098f2bj3pritsg5lck7bt2jf5tpu5e.apps.googleusercontent.com',
     iosBundleId: 'com.example.firebaseApp',
   );
 }
