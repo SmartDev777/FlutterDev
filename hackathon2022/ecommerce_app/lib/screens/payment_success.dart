@@ -13,13 +13,19 @@ class PaymentSuccessScreen extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Container(
-              margin: EdgeInsets.all(100.0),
-              child: Icon(
-                Icons.done,
-                color: Colors.green,
+              height: 200,
+              width: 200,
+              margin: EdgeInsets.all(10.0),
+              child: CircleAvatar(
+                radius: 20,
+                backgroundColor: Colors.green,
+                child: Icon(
+                  Icons.done,
+                  color: Colors.white,
+                ),
               ),
               decoration: BoxDecoration(
-                  color: Colors.green[500], shape: BoxShape.circle)),
+                  color: Colors.green[100], shape: BoxShape.circle)),
           SizedBox(
             height: 40,
           ),

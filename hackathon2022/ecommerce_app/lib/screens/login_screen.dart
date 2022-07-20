@@ -1,5 +1,6 @@
 import 'package:ecommerce_app/app_colors.dart';
 import 'package:ecommerce_app/screens/cart_screen.dart';
+import 'package:ecommerce_app/screens/main_screen.dart';
 import 'package:ecommerce_app/screens/product_screen.dart';
 import 'package:ecommerce_app/widgets/app_widgets.dart';
 import 'package:flutter/material.dart';
@@ -55,11 +56,10 @@ class _LoginScreenState extends State<LoginScreen> {
                   height: 20,
                 ),
                 appRoundedButton("Login", () {
-
                   Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(builder: (context) => CartScreen()),
-      );
+                    context,
+                    MaterialPageRoute(builder: (context) => MainScreen()),
+                  );
                 }),
                 SizedBox(
                   height: 20,

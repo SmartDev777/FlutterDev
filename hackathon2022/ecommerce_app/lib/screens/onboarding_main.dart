@@ -12,6 +12,10 @@ class OnBoarding extends StatelessWidget {
         // finishButtonText: 'Register',
         // skipTextButton: Text('Skip'),
         // trailing: Text('Login'),
+        finishButtonColor: Colors.transparent,
+        skipTextButton: Container(
+          color: Colors.transparent,
+        ),
         background: [
           Image.asset('assets/images/onboarding_1.png'),
           Image.asset('assets/images/onboarding_2.png'),
@@ -20,9 +24,9 @@ class OnBoarding extends StatelessWidget {
         totalPage: 3,
         speed: 1.8,
         pageBodies: [
-          appSliderView(context,"1", AppStrings.slider_1_desc),
-          appSliderView(context,"2", AppStrings.slider_2_desc),
-          appSliderView(context,"3", AppStrings.slider_3_desc),
+          appSliderView(context, "1", AppStrings.slider_1_desc),
+          appSliderView(context, "2", AppStrings.slider_2_desc),
+          appSliderView(context, "3", AppStrings.slider_3_desc),
         ],
       ),
     );
