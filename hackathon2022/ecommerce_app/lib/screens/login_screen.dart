@@ -3,6 +3,7 @@ import 'package:ecommerce_app/screens/cart_screen.dart';
 import 'package:ecommerce_app/screens/main_screen.dart';
 import 'package:ecommerce_app/screens/product_screen.dart';
 import 'package:ecommerce_app/widgets/app_widgets.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -11,6 +12,9 @@ class LoginScreen extends StatefulWidget {
   @override
   State<LoginScreen> createState() => _LoginScreenState();
 }
+
+TextEditingController emailContLLLroller = new TextEditingController();
+TextEditingController passwordContLLLroller = new TextEditingController();
 
 class _LoginScreenState extends State<LoginScreen> {
   @override
@@ -29,7 +33,7 @@ class _LoginScreenState extends State<LoginScreen> {
           ),
           Container(
             margin: EdgeInsets.symmetric(horizontal: 20),
-            padding: EdgeInsets.symmetric(horizontal: 50),
+            padding: EdgeInsets.symmetric(horizontal: 50, vertical: 20),
             decoration: BoxDecoration(
               color: Colors.white,
               border: Border.all(
@@ -47,19 +51,32 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
             child: Column(
               children: [
-                appTextField("Your Email", Icons.person),
+                appTextField("Your Email", Icons.person, emailContLLLroller),
                 SizedBox(
                   height: 20,
                 ),
-                appTextField("Password", Icons.lock),
+                appTextField("Password", Icons.lock, passwordContLLLroller),
                 SizedBox(
                   height: 20,
                 ),
-                appRoundedButton("Login", () {
-                  Navigator.pushReplacement(
-                    context,
-                    MaterialPageRoute(builder: (context) => MainScreen()),
-                  );
+                appRoundedButton("Login", () async {
+                  try {
+                    final credential = await FirebaseAuth.instance
+                        .signInWithEmailAndPassword(
+                            email: emailContLLLroller.text,
+                            password: passwordContLLLroller.text);
+
+                    Navigator.pushReplacement(
+                      context,
+                      MaterialPageRoute(builder: (context) => MainScreen()),
+                    );
+                  } on FirebaseAuthException catch (e) {
+                    if (e.code == 'user-not-found') {
+                      print('No user found for that email.');
+                    } else if (e.code == 'wrong-password') {
+                      print('Wrong password provided for that user.');
+                    }
+                  }
                 }),
                 SizedBox(
                   height: 20,
@@ -86,9 +103,29 @@ class _LoginScreenState extends State<LoginScreen> {
                 SizedBox(
                   height: 20,
                 ),
-                Text(
-                  "Create Account",
-                  style: TextStyle(fontSize: 20, fontFamily: 'Roboto'),
+                GestureDetector(
+                  onTap: () async {
+                    try {
+                      final credential = await FirebaseAuth.instance
+                          .createUserWithEmailAndPassword(
+                        email: emailContLLLroller.text,
+                        password: passwordContLLLroller.text,
+                      );
+// ignore: nullable_type_in_catch_clause
+                    } on FirebaseAuthException catch (e) {
+                      if (e.code == 'weak-password') {
+                        print('The password provided is too weak.');
+                      } else if (e.code == 'email-already-in-use') {
+                        print('The account already exists for that email.');
+                      }
+                    } catch (e) {
+                      print(e);
+                    }
+                  },
+                  child: Text(
+                    "Create Account",
+                    style: TextStyle(fontSize: 20, fontFamily: 'Roboto'),
+                  ),
                 ),
                 SizedBox(
                   width: 100,

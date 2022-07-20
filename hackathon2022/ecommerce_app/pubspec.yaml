@@ -36,6 +36,8 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter_onboarding_slider: ^1.0.7
   smooth_page_indicator: ^1.0.0+2
+  firebase_auth: ^3.4.2
+  firebase_core: ^1.19.2
 dev_dependencies:
   flutter_test:
     sdk: flutter

@@ -29,7 +29,7 @@ class _ProductViewState extends State<ProductView> {
                 itemCount: 15,
                 shrinkWrap: true,
                 itemBuilder: (BuildContext context, int index) {
-                  return cardItem();
+                  return cardItem(context);
                 }),
           ),
         ],

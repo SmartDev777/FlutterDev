@@ -1,10 +1,11 @@
 
 
-Flutter upgrade
+Flutter upgrade  ----check first
 
 node update --- for update 
 
 Firebase project creation 
+
 firebase cli by flutter 
 1) install node
 2) npm 
@@ -16,7 +17,7 @@ firebase cli by flutter
 
 6) Add Path Local pub -- get from above command and add in system environment path 
 
-7) Firebase Login 
+7) firebase Login 
 
 ================
 
@@ -34,3 +35,9 @@ Firebase authentication
 --- sign in with email 
 
 Firebase Firestore
+
+Platform  Firebase App Id
+web       1:1047486986075:web:6706a57e816a95b61fcc7e
+android   1:1047486986075:android:8db29713e2e33d871fcc7e
+ios       1:1047486986075:ios:14179a66ccdca1d91fcc7e
+macos     1:1047486986075:ios:14179a66ccdca1d91fcc7e

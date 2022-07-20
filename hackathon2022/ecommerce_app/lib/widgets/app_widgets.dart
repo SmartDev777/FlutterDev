@@ -29,8 +29,9 @@ appTitle(text) {
   );
 }
 
-appTextField(hint, icon) {
+appTextField(hint, icon, controller) {
   return TextField(
+    controller: controller,
     textAlign: TextAlign.center,
     decoration: InputDecoration(
         prefixIcon: Icon(icon),
@@ -41,6 +42,24 @@ appTextField(hint, icon) {
         filled: true,
         hintStyle: TextStyle(
             color: Color(0xff919191), fontFamily: 'Roboto', fontSize: 16),
+        hintText: hint,
+        fillColor: AppColors.textfiled_bg),
+  );
+}
+
+appBorderTextFieldNoIcon(hint) {
+  return TextField(
+    textAlign: TextAlign.start,
+    decoration: InputDecoration(
+        border: OutlineInputBorder(
+          borderSide: BorderSide.none,
+          borderRadius: BorderRadius.circular(12.0),
+        ),
+        filled: true,
+        hintStyle: TextStyle(
+            color: AppColors.secondary_textcolor,
+            fontFamily: 'Roboto',
+            fontSize: 16),
         hintText: hint,
         fillColor: AppColors.textfiled_bg),
   );
