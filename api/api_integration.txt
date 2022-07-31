@@ -1,0 +1,13 @@
+api intergation 
+maping understanding 
+data[0][address]['lat'] //wihtout model
+install http or https package 
+use FutureBuilder for data fetching 
+AsyncSnapshot use in future builder 
+snapshot.hasdata for checking data 
+wihtout model 
+with model use class , json to dart 
+
+
+ref link : https://docs.flutter.dev/cookbook/networking/background-parsing
+jsontodart
