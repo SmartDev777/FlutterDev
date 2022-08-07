@@ -30,6 +30,7 @@ class _HomeScreenState extends State<HomeScreen> {
     // TODO: implement initState
     super.initState();
     // getUsers();
+    postApi();
   }
   @override
   Widget build(BuildContext context) {
