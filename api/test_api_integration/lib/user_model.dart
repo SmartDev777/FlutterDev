@@ -1,5 +1,5 @@
 class UserModel {
-  int? id;
+  String? id;
   String? name;
   String? username;
   String? email;
@@ -19,16 +19,14 @@ class UserModel {
       this.company});
 
   UserModel.fromJson(Map<String, dynamic> json) {
-    id = json['id'];
+    // id = json['id'];
     name = json['name'];
     username = json['username'];
     email = json['email'];
-    address =
-        json['address'] != null ? new Address.fromJson(json['address']) : null;
+    // address = json['address'] != null ? new Address.fromJson(json['address']) : null;
     phone = json['phone'];
     website = json['website'];
-    company =
-        json['company'] != null ? new Company.fromJson(json['company']) : null;
+    // company = json['company'] != null ? new Company.fromJson(json['company']) : null;
   }
 
   Map<String, dynamic> toJson() {

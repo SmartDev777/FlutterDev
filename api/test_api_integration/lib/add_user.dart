@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:http/http.dart';
 import 'package:test_api_integration/user_services.dart';
 
 class AddUser extends StatelessWidget {
@@ -8,11 +9,27 @@ class AddUser extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-            postApi();
-          },
-          child: Text('Add User'),
+        child: Column(
+          children: [
+            ElevatedButton(
+              onPressed: () {
+                postApi();
+              },
+              child: Text('Add User'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                DeleteApi();
+              },
+              child: Text('Delete User'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                putApi();
+              },
+              child: Text('Update User'),
+            ),
+          ],
         ),
       ),
     );

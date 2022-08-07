@@ -5,15 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="811926b0-733c-4f54-996f-1f6a787fd11b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/test_api_integration/lib/detail_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_api_integration/lib/home_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/test_api_integration/lib/home_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_api_integration/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/test_api_integration/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_api_integration/lib/user_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/test_api_integration/lib/user_model.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_api_integration/lib/user_services.dart" beforeDir="false" afterPath="$PROJECT_DIR$/test_api_integration/lib/user_services.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_api_integration/linux/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/test_api_integration/linux/flutter/generated_plugin_registrant.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_api_integration/linux/flutter/generated_plugin_registrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/test_api_integration/linux/flutter/generated_plugin_registrant.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_api_integration/linux/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/test_api_integration/linux/flutter/generated_plugins.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_api_integration/macos/Flutter/GeneratedPluginRegistrant.swift" beforeDir="false" afterPath="$PROJECT_DIR$/test_api_integration/macos/Flutter/GeneratedPluginRegistrant.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_api_integration/windows/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/test_api_integration/windows/flutter/generated_plugin_registrant.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_api_integration/windows/flutter/generated_plugin_registrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/test_api_integration/windows/flutter/generated_plugin_registrant.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_api_integration/windows/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/test_api_integration/windows/flutter/generated_plugins.cmake" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
