@@ -373,4 +373,17 @@ offset: Offset(4, 8), // Shadow position
  ),
  ],
 ```
-                                                 
+## Gridview Builder 
+
+```
+GridView.builder(
+                gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
+                    maxCrossAxisExtent: 100,
+                    childAspectRatio: 3 / 2,
+                    crossAxisSpacing: 20,
+                    mainAxisSpacing: 20),
+                itemCount: 10,
+                itemBuilder: (BuildContext ctx, index) {
+                  return Card();
+                }),
+```
