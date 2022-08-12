@@ -272,6 +272,22 @@ Icon(Icons.edit,color: Colors.white,)
             ));
 ```
 
+## Firebase Setup 
+
+```
+firebase_auth: ^3.4.2
+  firebase_core: ^1.19.2
+
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+  runApp(const MyApp());
+}
+
+```
+
 ## Sign in Firebase 
 
 ```
